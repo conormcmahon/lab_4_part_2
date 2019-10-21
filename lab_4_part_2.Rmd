@@ -28,9 +28,19 @@ iris_graph <- ggplot(data = iris, aes(x = Petal.Width, y = Petal.Length)) +
                  color = Species)) + 
   labs(x = "Petal width (cm)", 
        y = "Petal length (cm)",
-       title = "Iris metrics"
+       title = "Iris metrics")
 
 ggplotly(iris_graph)
 
 ```
+
+
+### Make an interactive table 
+
+```{r}
+
+datatable(msleep)
+
+```
+
 
